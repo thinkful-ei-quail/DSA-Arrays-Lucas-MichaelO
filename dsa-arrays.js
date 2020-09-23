@@ -66,7 +66,6 @@ newArray.get(0);
 
 console.log(newArray);
 
-
 //5. URLify a string
 function replaceSpaces(str, len) {
   return str.replace(/\s/g, '%20');
