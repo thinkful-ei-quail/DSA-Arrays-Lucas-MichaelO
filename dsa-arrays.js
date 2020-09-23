@@ -70,7 +70,7 @@ console.log(newArray);
 function replaceSpaces(str, len) {
   return str.replace(/\s/g, '%20');
 }
-replaceSpaces('www.thinkful.com /tauh ida parv een');
+console.log(replaceSpaces('www.thinkful.com /tauh ida parv een'));
 
 //6. Filtering an array
 function filter(arr) {
@@ -79,7 +79,7 @@ function filter(arr) {
   }
   return arr;
 }
-filter([4, 6, -3, 5, -2, 1]);
+console.log(filter([4, 6, -3, 5, -2, 1]));
 
 //7. Max sum in the array
 function maxSum(arr) {
@@ -91,7 +91,7 @@ function maxSum(arr) {
   }
   return max;
 }
-maxSum([4, 6, -3, 5, -2, 1]);
+console.log(maxSum([4, 6, -3, 5, -2, 1]));
 
 //8. Merge arrays
 function merge(arr1, arr2) {
@@ -119,7 +119,7 @@ function merge(arr1, arr2) {
   }
   return answer;
 }
-merge([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]);
+console.log(merge([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]));
 
 //9. Remove characters
 function remove(str, chars) {
@@ -127,7 +127,7 @@ function remove(str, chars) {
   return str.replace(re, '');
 }
 
-remove('Battle of the Vowels: Hawaii vs. Grozny', 'aeiou');
+console.log (remove('Battle of the Vowels: Hawaii vs. Grozny', 'aeiou'));
 
 //10. Products
 //replace each with product of all but it
@@ -141,7 +141,7 @@ function products(arr) {
   }
   return arr;
 }
-products([1, 3, 9, 4]);
+console.log(products([1, 3, 9, 4]));
 
 //11. 2D array
 function zeroIt(arr) {
@@ -171,7 +171,7 @@ let array = [[1, 0, 1, 1, 0],
   [1, 0, 1, 1, 1],
   [1, 1, 1, 1, 1]];
 
-zeroIt(array);
+console.log(zeroIt(array));
 
 //12. String rotation
 function rotation(a, b) {
@@ -199,4 +199,5 @@ function isRotated(a, b, start) {
   }
   return true;
 }
-rotation('amazon', 'azonam');
+console.log(rotation('amazon', 'azonam'));
+console.log(rotation('amazon', 'azonan'));
