@@ -1,22 +1,23 @@
+/* eslint-disable indent */
 class Memory {
   constructor() {
     this.memory = new Float64Array(1024);
-    this.head = 0;
+    this.head = 0; 
   }
 
-  allocate(size) {
+  allocate(size) { 
     if (this.head + size > this.memory.length) {
       return null;
     }
 
-    let start = this.head;
+    let start = this.head;  
 
-    this.head += size;
+    this.head += size; 
     return start;
   }
 
   free(ptr) {}
-
+  
   copy(toIdx, fromIdx, size) {
     if (fromIdx === toIdx) {
       return;
@@ -38,10 +39,10 @@ class Memory {
   get(ptr) {
     return this.memory[ptr];
   }
-
+      
   set(ptr, value) {
     this.memory[ptr] = value;
   }
 }
 
-module.exports = Memory;
+module.exports = new Memory();

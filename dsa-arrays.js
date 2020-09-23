@@ -55,6 +55,18 @@ function main(){
 }
 main()*/
 
+const Array = require('./array');
+
+const newArray = new Array();
+newArray.push(1);
+newArray.push(2);
+newArray.push(3);
+newArray.push(4);
+newArray.get(0);
+
+console.log(newArray);
+
+
 //5. URLify a string
 function replaceSpaces(str, len) {
   return str.replace(/\s/g, '%20');
